@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+}
+body {
+	font-family: "Roboto", sans-serif;
+	line-height: 1.5;
+	color: #626262;
+}
+.main {
+	max-width: 140rem;
+}
+.row {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	gap: 4rem 1rem;
+	place-items: start center;
+	font-size: 1.4rem;
+	border-bottom: 1px solid hsla(0, 0%, 60%, 0.3);
+	padding: 20rem 5rem;
+	padding-bottom: 8rem;
+}
+
+.list-items {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 2rem;
+}
+.items {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 2.6rem;
+}
+.items ion-icon[name="star"] {
+	--ionicon-stroke-width: 2rem;
+	font-size: 2rem;
+	color: #1ac6ff;
+}
+.item-heading {
+	margin-bottom: 2.4rem;
+	margin-left: 2rem;
+	font-size: 2rem;
+	font-weight: 200;
+}
+.text {
+	line-height: 1.7;
+	font-size: 1.6rem;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+.long-text {
+	margin-bottom: 2rem;
+}
+.primary-heading {
+	font-size: 3rem;
+	line-height: 1;
+}
+.light-blue {
+	color: #1ac6ff;
+}
+.image img {
+	display: inline-block;
+	width: 30rem;
+}
+.features {
+	max-width: 100%;
+	background-color: #f7f7f7;
+	text-align: center;
+	padding: 20rem 2rem;
+}
+.feature-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.6rem;
+}
+
+.feature-text p:nth-child(2) {
+	font-weight: 500;
+}
+.features p {
+	font-size: 1.6rem;
+}
+.btns {
+	padding: 2.2rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1.4rem;
+	padding: 1.2rem 2.4rem;
+	background-color: #1ac6ff;
+	outline: none;
+	border: none;
+	-webkit-border-radius: 0.5rem;
+	-moz-border-radius: 0.5rem;
+	-ms-border-radius: 0.5rem;
+	-o-border-radius: 0.5rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	color: #fff;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.btn:hover,
+.btn:active {
+	background-color: #38bdf8;
+}
+.footer {
+	max-width: 100%;
+	background-color: #000;
+	padding: 5rem 5rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	gap: 2rem;
+	place-items: start;
+}
+.footer-heading {
+	color: #fff;
+	font-size: 1.8rem;
+	font-weight: 400;
+	margin-bottom: 2rem;
+}
+.footer-lists {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	font-size: 1.5rem;
+}
+.foot-list a:link,
+.foot-list a:visited {
+	text-decoration: none;
+	color: #a7a6a6;
+
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.foot-list a:hover,
+.foot-list a:active {
+	color: #1ac6ff;
+}
+.icons {
+	margin-top: 2rem;
+}
+.icon-lists {
+	list-style: none;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 0.4rem;
+}
+.list a ion-icon {
+	color: #a7a6a6;
+	border: 1px solid #626262;
+	width: 1.5rem;
+	height: 1.5rem;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	padding: 0.8rem;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.list ion-icon:hover,
+.list ion-icon:active {
+	background-color: #1ac6ff;
+	color: #fff;
+}
