@@ -153,6 +153,8 @@ body {
 	font-size: 1.5rem;
 }
 .foot-list a:link,
+.copy-write p + p a:link,
+.copy-write p + p a:visited,
 .foot-list a:visited {
 	text-decoration: none;
 	color: #a7a6a6;
@@ -164,6 +166,8 @@ body {
 	transition: all 0.2s;
 }
 .foot-list a:hover,
+.copy-write p + p a:hover,
+.copy-write p + p a:active,
 .foot-list a:active {
 	color: #1ac6ff;
 }
