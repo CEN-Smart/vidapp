@@ -7,6 +7,7 @@ yearEl.innerText = newDate;
 
 const mobileNavBtn = document.querySelector(".btn-open");
 const navEl = document.querySelector(".nav");
+
 mobileNavBtn.addEventListener("click", function (e) {
 	e.preventDefault();
 	navEl.classList.toggle("nav-open");
