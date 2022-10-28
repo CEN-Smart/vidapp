@@ -116,6 +116,7 @@ body {
 	color: #fff;
 }
 .accordian .text-accord {
+	line-height: 1;
 	font-size: 6rem;
 }
 .accordian h1 + p {
