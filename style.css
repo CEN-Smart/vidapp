@@ -117,19 +117,21 @@ body {
 }
 .accordian {
 	width: 100%;
-	background-image: linear-gradient(
-			to bottom right,
-			hsla(0, 0%, 0%, 0.5),
-			hsla(0, 0%, 0%, 0.5)
-		),
-		url(/back-top.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+	position: relative;
 	min-height: 100vh;
-	padding: 5rem 1rem 1rem;
+	padding: 10rem 1rem 5rem;
 	text-align: center;
-	color: #fff;
+	color: #0284c7;
+}
+
+.bg-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+	z-index: -1;
+	opacity: 0.2;
 }
 .accordian .text-accord {
 	line-height: 1;
@@ -150,6 +152,9 @@ body {
 	padding-bottom: 8rem;
 }
 
+.p-top {
+	padding-top: 48rem;
+}
 .list-items {
 	list-style: none;
 	display: flex;
