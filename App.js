@@ -7,7 +7,7 @@ yearEl.innerText = newDate;
 
 const mobileNavBtn = document.querySelector(".btn-open");
 const navEl = document.querySelector(".nav");
-
+const ctaBtn = document.querySelector(".col-white");
 mobileNavBtn.addEventListener("click", function (e) {
 	e.preventDefault();
 	navEl.classList.toggle("nav-open");
@@ -19,3 +19,6 @@ linksEl.forEach((link) =>
 		if (link.classList.contains("nav-link")) navEl.classList.toggle("nav-open");
 	})
 );
+ctaBtn.addEventListener("click", function () {
+	navEl.classList.toggle("nav-open");
+});
