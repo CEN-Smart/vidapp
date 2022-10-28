@@ -15,17 +15,17 @@ body {
 	font-family: "Roboto", sans-serif;
 	line-height: 1.5;
 	color: #626262;
-	background-color: #d1d5db;
 	position: relative;
 	overflow-x: hidden;
 	box-sizing: border-box;
 }
 
 .nav {
-	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	margin-bottom: 0rem;
 }
 .nav-heading {
 	font-size: 2rem;
@@ -33,7 +33,7 @@ body {
 .nav-heading a:link,
 .nav-heading a:visited {
 	text-decoration: none;
-	color: #0284c7;
+	color: #38bdf8;
 	text-shadow: 0 1rem 2rem hsla(0, 0%, 60%, 0.3);
 }
 .nav-list a:link,
@@ -42,7 +42,7 @@ body {
 	text-decoration: none;
 	color: #626262;
 	font-size: 1.6rem;
-	font-weight: 400;
+	font-weight: 500;
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
 	-ms-transition: all 0.2s;
@@ -59,7 +59,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 1.4rem;
+	gap: 1.6rem;
 }
 .btn-open {
 	border: none;
@@ -72,11 +72,11 @@ body {
 	width: 3rem;
 	cursor: pointer;
 	border: 2px solid #000;
-	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
+	border-radius: 5px;
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
 	-ms-transition: all 0.2s;
@@ -94,10 +94,26 @@ body {
 .nav {
 	padding: 1rem;
 }
+/* todo sticky navigation */
+.sticky .nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: hsla(0, 0%, 97%, 0.97);
+	z-index: 99;
+	padding-top: 0;
+	padding-bottom: 0;
+	height: 6rem;
+	box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+.sticky .accordian {
+	margin-top: 6.8rem;
+}
 .main,
 .footer {
 	max-width: 140rem;
-	padding: 3rem 1rem;
+	padding: 4rem 1rem;
 }
 .accordian {
 	width: 100%;
@@ -110,8 +126,8 @@ body {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 100vh;
-	padding: 5rem 1rem 0;
+	min-height: 100vh;
+	padding: 5rem 1rem 1rem;
 	text-align: center;
 	color: #fff;
 }
@@ -336,7 +352,8 @@ body {
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 100vh;
+		min-height: 100vh;
+		padding: 1rem 0;
 		background-color: hsla(0, 0%, 97%, 0.97);
 		flex-direction: column;
 		gap: 5rem;
