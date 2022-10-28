@@ -92,12 +92,12 @@ body {
 	color: #fff !important;
 }
 .nav {
-	padding: 1rem 5rem;
+	padding: 1rem;
 }
 .main,
 .footer {
 	max-width: 140rem;
-	padding: 3rem 5rem;
+	padding: 3rem 1rem;
 }
 .accordian {
 	width: 100%;
@@ -312,7 +312,7 @@ body {
 	color: #fff;
 }
 .copy-write {
-	padding: 2rem 5rem 4rem;
+	padding: 2rem 1rem 4rem;
 	background-color: #000;
 	background-size: 100%;
 	display: flex;
