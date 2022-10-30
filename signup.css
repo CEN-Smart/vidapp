@@ -33,7 +33,36 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-flow: row wrap;
+	position: relative;
 }
+.back-home {
+	position: absolute;
+	top: -1.2rem;
+	left: 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #39abb5;
+	padding: 0.4rem;
+	width: 6.5rem;
+	text-align: center;
+	cursor: pointer;
+}
+.back-home:hover {
+	background-color: #0891b2;
+}
+.back-home ion-icon[name="chevron-back-outline"] {
+	font-size: 1.4rem;
+	color: #fff;
+}
+.back-home a:link,
+.back-home a:visited {
+	font-size: 1.2rem;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 500;
+}
+
 form {
 	display: flex;
 	flex-direction: column;
