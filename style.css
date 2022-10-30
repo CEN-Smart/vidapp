@@ -156,8 +156,8 @@ body {
 	border: 1px solid #38bdf8;
 	padding: 1.2rem;
 	font-weight: 600;
-	background-color: #fff;
-	color: #1ac6ff;
+	background-color: #38bdf8;
+	color: #fff;
 	cursor: pointer;
 }
 .input input::-webkit-input-placeholder {
@@ -165,6 +165,8 @@ body {
 	font-family: inherit;
 	font-weight: 400;
 	color: #777;
+	text-align: center;
+	color: #059105;
 }
 
 /* .bg-video {
