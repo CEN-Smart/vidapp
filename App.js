@@ -36,7 +36,8 @@ const obs = new IntersectionObserver(
 	{
 		root: null,
 		threshold: 0,
-		rootMargin: "-6px",
+		rootMargin: "-50px",
 	}
 );
 obs.observe(sectionEl);
+console.log(navEl.getBoundingClientRect().height);
